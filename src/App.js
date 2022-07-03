@@ -5,13 +5,12 @@ import Footer from './component/Footer';
 import CountryList from './component/CountryList';
 import SingleCountryInfo from './component/SingleCountryInfo';
 import { useState } from 'react';
-import Message from './component/Message';
 
 function App() {
 
   const [country, setCountry] = useState([]);
 
-  let len;
+  // let len;
 
   const handleClick = (selectCountry) => {
     setCountry(selectCountry);
