@@ -3,11 +3,13 @@
 
 
 # ScreenShots
-![](pic.png)
+<!-- ![](pic.png) -->
+{On going}
 
 ## Built With
 - React
 - Bootstrap5(latest)
+- disease.sh API 
 
 ## Live Demo
 For the link to the live demo, [Click here]

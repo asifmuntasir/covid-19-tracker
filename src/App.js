@@ -1,23 +1,40 @@
 import './App.css';
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-} from "react-router-dom";
 import Header from './component/Header';
-import Home from './component/Home';
-import AllCaseInfo from './component/AllCaseInfo';
+import WorldCaseInfo from './component/WorldCaseInfo';
+import Footer from './component/Footer';
+import CountryList from './component/CountryList';
+import SingleCountryInfo from './component/SingleCountryInfo';
+import { useState } from 'react';
+import Message from './component/Message';
 
 function App() {
+
+  const [country, setCountry] = useState([]);
+
+  let len;
+
+  const handleClick = (selectCountry) => {
+    setCountry(selectCountry);
+    // len = selectCountry.length();
+  }
+
+
   return (
-    <div className="App">
+    <div className="container-fluid app-bg">
       <Header />
-      <AllCaseInfo />
-      <Router>
-        <Routes>
-          <Route path="/home" element={<Home />} />
-        </Routes>
-      </Router>
+      <WorldCaseInfo />
+      <div className="container-md">
+        <div className="row">
+          <div className="col-3"><CountryList handleClick={handleClick} /></div>
+          <div className="col-9">
+            {/* {
+              len < 0 ? <Message /> : <SingleCountryInfo cn={country} />
+            } */}
+            <SingleCountryInfo cn={country} />
+          </div>
+        </div>
+      </div>
+      <Footer />
     </div>
   );
 }
