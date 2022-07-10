@@ -11,7 +11,7 @@
 - disease.sh API 
 
 ## Live Demo
-For the link to the live demo, [Click here]
+For the link to the live demo, [Click here](https://covid-19-tracker-asifmuntasir.vercel.app/)
 
 ## Getting Started
 To get a local copy up and running you just need to follow the following steps;
@@ -41,7 +41,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Programming Hero Team
+- Tufahel Ahmed
 
 ## 📝 License
 
