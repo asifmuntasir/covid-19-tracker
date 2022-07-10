@@ -3,8 +3,7 @@
 
 
 # ScreenShots
-<!-- ![](pic.png) -->
-{On going}
+![](Covid-19-Case-Tracker.png)
 
 ## Built With
 - React
