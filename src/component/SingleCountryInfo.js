@@ -1,7 +1,6 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import '../assets/SingleCountry.css';
-import LineGraph from './LineGraph';
 
 
 const SingleCountryInfo = (props) => {
